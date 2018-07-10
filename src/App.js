@@ -85,8 +85,8 @@ import prodID8 from './components/product_pages/prodID8';
 // import prodID1560 from '../components/subcat=205/prodID1560';
 // import prodID1561 from '../components/subcat=205/prodID1561';
 // import Category from '../components/category_pages/category';
-// import Cat_Trident from '../components/category_pages/cat_trident';
-// import Cat_Sullivan_Palatek from './components/category_pages/cat_sullivan_palatek';
+import Cat_Trident from './components/category_pages/cat_trident';
+import Cat_Sullivan_Palatek from './components/category_pages/cat_sullivan_palatek';
 // import Cat_Zeks from '../components/category_pages/cat_zeks';
 // import ZTF_Replacement_Elements from '../components/subcat=205/ztf_replacement_elements';
 // import Air_Dryers from '../components/subcat=233/air_dryers';
@@ -432,8 +432,8 @@ class App extends Component {
             {/* <Route path="/subcat=205/prodID1560" component={prodID1560}/> */}
             {/* <Route path="/subcat=205/prodID1561" component={prodID1561}/> */}
             {/* <Route path="/category_pages/category" component={Category}/> */}
-            {/* <Route path="/category_pages/cat_trident" component={Cat_Trident}/> */}
-            {/* <Route path="/category_pages/cat_sullivan_palatek" component={Cat_Sullivan_Palatek}/> */}
+            <Route path="/category_pages/cat_trident" component={Cat_Trident}/>
+            <Route path="/category_pages/cat_sullivan_palatek" component={Cat_Sullivan_Palatek}/>
             {/* <Route path="/category_pages/cat_zeks" component={Cat_Zeks}/> */}
             {/* <Route path="/subcat=205/ZTF_Replacement_Elements" component={ZTF_Replacement_Elements}/> */}
             {/* <Route path="/subcat=233/air_dryers" component={Air_Dryers}/> */}
