@@ -87,7 +87,7 @@ import prodID8 from './components/product_pages/prodID8';
 // import Category from '../components/category_pages/category';
 import Cat_Trident from './components/category_pages/cat_trident';
 import Cat_Sullivan_Palatek from './components/category_pages/cat_sullivan_palatek';
-// import Cat_Zeks from '../components/category_pages/cat_zeks';
+import Cat_Zeks from './components/category_pages/cat_zeks';
 // import ZTF_Replacement_Elements from '../components/subcat=205/ztf_replacement_elements';
 // import Air_Dryers from '../components/subcat=233/air_dryers';
 // import Compressed_Air_Filters from '../components/subcat=233/compressed_air_filters';
@@ -434,7 +434,7 @@ class App extends Component {
             {/* <Route path="/category_pages/category" component={Category}/> */}
             <Route path="/category_pages/cat_trident" component={Cat_Trident}/>
             <Route path="/category_pages/cat_sullivan_palatek" component={Cat_Sullivan_Palatek}/>
-            {/* <Route path="/category_pages/cat_zeks" component={Cat_Zeks}/> */}
+            <Route path="/category_pages/cat_zeks" component={Cat_Zeks}/>
             {/* <Route path="/subcat=205/ZTF_Replacement_Elements" component={ZTF_Replacement_Elements}/> */}
             {/* <Route path="/subcat=233/air_dryers" component={Air_Dryers}/> */}
             {/* <Route path="/subcat=233/compressed_air_filters" component={Compressed_Air_Filters}/> */}
