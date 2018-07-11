@@ -190,7 +190,7 @@ class Home extends Component {
                 </div>
 
                 <div className="product-details">
-                  <h4 className="product-title"><a href="/product_pages/prodID409">Quick-Connect 400 Oxygen Wall Outlet Station</a></h4>
+                  <h4 className="product-title"><a href="/product_pages/prodID409">Quick-Connect 400 Oxygen Wall<br />Outlet Station</a></h4>
                   <h6 className="product-brand-name">Chemetron</h6>
                   <h6 className="product-suggested-retail-price">$77.00</h6>
                   <h6 className="product-savings">Savings: <strong>$33.69</strong></h6>

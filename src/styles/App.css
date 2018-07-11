@@ -847,6 +847,58 @@
 
 
 
+
+.top-brands {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  height: 200px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 60px;
+}
+
+
+
+
+.brand-logo {
+  margin:5px 5px 5px 5px;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+
+
+
+.brand-logo img {
+  float: left;
+}
+
+
+
+
+.brand-text {
+  font-size: 14px;
+  float: right;
+}
+
+
+
+
+.brand-text li {
+  font-size: 16px;
+}
+
+
+
+
+.brand-text a {
+  font-size: 18px;
+}
+
+
+
+
 /*---HELP CENTER STYLES BEGIN---*/
 .HelpAndCurrency {
   display: flex;
@@ -1454,6 +1506,7 @@
   box-shadow: 0px 0px 0px 2px;
   background-color: #2C3E50;
   color: white;
+  text-align: center;
 }
 
 

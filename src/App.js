@@ -14,14 +14,14 @@ import About from './components/About';
 // import ProductLines from '../components/product_lines';
 // import ContactUs from '../components/contact_us';
 // import ViewCart from '../components/viewcart';
-// import prodID409 from '../components/product_pages/prodID409';
+import prodID409 from './components/product_pages/prodID409';
 import prodID8 from './components/product_pages/prodID8';
-// import prodID341 from '../components/product_pages/prodID341';
-// import prodID14 from '../components/product_pages/prodID14';
-// import prodID643 from '../components/product_pages/prodID643';
-// import prodID1170 from '../components/product_pages/prodID1170';
-// import prodID1423 from '../components/product_pages/prodID1423';
-// import prodID1425 from '../components/product_pages/prodID1425';
+import prodID341 from './components/product_pages/prodID341';
+import prodID14 from './components/product_pages/prodID14';
+import prodID643 from './components/product_pages/prodID643';
+import prodID1170 from './components/product_pages/prodID1170';
+import prodID1423 from './components/product_pages/prodID1423';
+import prodID1425 from './components/product_pages/prodID1425';
 // import prodID1426 from '../components/product_pages/prodID1426';
 // import prodID1460 from '../components/product_pages/prodID1460';
 // import prodID1467 from '../components/product_pages/prodID1467';
@@ -360,14 +360,14 @@ class App extends Component {
             {/* <Route path="/product_lines" component={ProductLines}/> */}
             {/* <Route path="/contact_us" component={ContactUs}/> */}
             {/* <Route path="/viewcart" component={ViewCart}/> */}
-            {/* <Route path="/product_pages/prodID409" component={prodID409}/> */}
+            <Route path="/product_pages/prodID409" component={prodID409}/>
             <Route path="/product_pages/prodID8" component={prodID8}/>
-            {/* <Route path="/product_pages/prodID341" component={prodID341}/> */}
-            {/* <Route path="/product_pages/prodID14" component={prodID14}/> */}
-            {/* <Route path="/product_pages/prodID643" component={prodID643}/> */}
-            {/* <Route path="/product_pages/prodID1170" component={prodID1170}/> */}
-            {/* <Route path="/product_pages/prodID1423" component={prodID1423}/> */}
-            {/* <Route path="/product_pages/prodID1425" component={prodID1425}/> */}
+            <Route path="/product_pages/prodID341" component={prodID341}/>
+            <Route path="/product_pages/prodID14" component={prodID14}/>
+            <Route path="/product_pages/prodID643" component={prodID643}/>
+            <Route path="/product_pages/prodID1170" component={prodID1170}/>
+            <Route path="/product_pages/prodID1423" component={prodID1423}/>
+            <Route path="/product_pages/prodID1425" component={prodID1425}/>
             {/* <Route path="/product_pages/prodID1426" component={prodID1426}/> */}
             {/* <Route path="/product_pages/prodID1460" component={prodID1460}/> */}
             {/* <Route path="/product_pages/prodID1467" component={prodID1467}/> */}

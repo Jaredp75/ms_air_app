@@ -34,10 +34,9 @@ class prodID8 extends Component {
                       </div>
                       <div id="product-image">
                         <img src={pic.icon} alt="Quick Connect 500 Vacuum Wall Outlet" />
+                        <h5>Catalog Number:<br />{pic.prodSku}</h5>
                       </div>
-                      <div className="prodSku">
-                        {pic.prodSku}
-                      </div>
+
 
                     <div className="individual-product-details">
                       <div className="product-title">
@@ -45,7 +44,7 @@ class prodID8 extends Component {
                       </div>
                         <h4 className="product-brand-title">{pic.brandName}</h4>
                         <h4 className="individual-product-suggested-retail-price">MSRP: ${pic.msrp}</h4>
-                        <h4 className="individual-product-savings">Savings: <strong>{ `${pic.msrp} -  ${pic.prodPrice}` }</strong></h4>
+                        <h4 className="individual-product-savings">Savings: <strong>${pic.msrp - pic.prodPrice}</strong></h4>
                         <h3 className="individual-product-actual-price"><strong>${pic.prodPrice}</strong></h3>
                         <br />
                         <br />
@@ -426,17 +425,23 @@ class prodID8 extends Component {
         </div>
       </div>
 
-        <div className="about-footer">
-          <div className="terms">
-            <p><a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a> | <a href="/privacy" target='_blank' rel="noopener noreferrer">Privacy Policy</a></p>
-          </div>
 
-          <div className="copyright">
-            <p>&copy; 2018 - MS Air, Inc. | <Link to="/">Home</Link></p>
-          </div>
-
-        </div>
       </div>
+      <div className="about-footer">
+        <div className="terms">
+          <p><a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a> | <a href="/privacy" target='_blank' rel="noopener noreferrer">Privacy Policy</a></p>
+        </div>
+
+        <div className="copyright">
+          <p>&copy; 2018 - MS Air, Inc. | <Link to="/">Home</Link></p>
+        </div>
+
+      </div>
+
+
+
+
+
     </div>
 
 
