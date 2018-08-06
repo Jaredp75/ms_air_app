@@ -15,11 +15,12 @@ class prodID1425 extends Component {
 
   componentDidMount() {
 
-    fetch('https://www.msaironline.com/qa1/api/product.php?id=1425')
+    fetch('http://www.msaironline.com/qa1/api/product.php?type=top')
     .then(results => {
       return results.json();
     }).then(data => {
       let products = data.product.map((pic) => {
+        console.log(pic);
         return(
 
           <div>
@@ -50,29 +51,27 @@ class prodID1425 extends Component {
                         <br />
                       <div className="individual-product-description">
                         <ul>
-                          <li><strong>Dimensions</strong>: 26x19x30 in.</li>
-                          <li><strong>Drive Belts</strong>: Two (2)</li>
-                          <li><strong>Horse Power</strong>: 3 (2.2 kW)</li>
-                          <li><strong>Input Power</strong>: 230v 1ph 60Hz</li>
-                          <li><strong>Max Amps</strong>: 16.0 @ 230v</li>
-                          <li><strong>Oil Drippers</strong>: Two (2)</li>
-                          <li><strong>RPM</strong>: 800</li>
-                          <li><strong>Size</strong>: 1.8L</li>
+                          {/* <li><strong>{pic.attributes[0].field}</strong>: {pic.attributes[0].value}</li>
+                          <li><strong>{pic.attributes[1].field}</strong>: {pic.attributes[1].value}</li>
+                          <li><strong>{pic.attributes[2].field}</strong>: {pic.attributes[2].value}</li>
+                          <li><strong>{pic.attributes[3].field}</strong>: {pic.attributes[3].value}</li>
+                          <li><strong>{pic.attributes[4].field}</strong>: {pic.attributes[4].value}</li>
+                          <li><strong>{pic.attributes[5].field}</strong>: {pic.attributes[5].value}</li>
+                          <li><strong>{pic.attributes[6].field}</strong>: {pic.attributes[6].value}</li>
+                          <li><strong>{pic.attributes[7].field}</strong>: {pic.attributes[7].value}</li> */}
                           <br />
                           <li>{pic.prodDesc}</li>
                           <br />
                           <li>{pic.prodLongDesc}</li>
                           <br />
-                          <li>Freight Shipping billed separately to contiguous 48 states. Additional fees may apply if lift gate is required. Call for details.</li>
-                          <br />
-                          <li>Call Toll Free <strong>(877) 672-4799</strong> for detailed pricing.</li>
+                          <li>{pic.message}</li>
                         </ul>
                       </div>
 
-                      <div className="file_section">
-                        <a href="http://www.msaironline.com/files/39.pdf"><img src="./img/pdf.jpg"></img></a>
-                        <h5>RamVac Bison.pdf</h5>
-                      </div>
+                      {/* <div className="file_section">
+                        <a href={pic.file[0].file}><img src="http://www.msaironline.com/images/pdf.jpg" alt="placeholder"></img></a>
+                        <a href={pic.file[0].file}><h5>{pic.file[0].file_name}</h5></a>
+                      </div> */}
 
 
 
@@ -459,7 +458,7 @@ class prodID1425 extends Component {
         )
       })
       console.log("state", this.state.products);
-      this.setState({products: products});
+      this.setState({products});
     })
   }
 
